@@ -17,6 +17,8 @@ from selenium.webdriver.support.select import Select
   {{< / code-panel >}}
   {{< code-panel language="csharp" >}}
 // We don't have a C# code sample yet -  Help us out and raise a PR
+//Made changes 
+ using OpenQA.Selenium.Support.UI;
   {{< / code-panel >}}
   {{< code-panel language="ruby" >}}
 include Selenium::WebDriver::Support
@@ -43,6 +45,8 @@ select_object = Select(select_element)
   {{< / code-panel >}}
   {{< code-panel language="csharp" >}}
 // We don't have a C# code sample yet -  Help us out and raise a PR
+  IWebElement selectElement=driver.FindElement(By.Id("selectElementID"))
+  SelectElement selectObject=new SelectElement(selectElement)
   {{< / code-panel >}}
   {{< code-panel language="ruby" >}}
 select_element = driver.find_element(id: 'selectElementID')
